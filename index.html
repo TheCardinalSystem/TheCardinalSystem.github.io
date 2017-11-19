@@ -3,6 +3,11 @@
 <head>
 <title>Libraries - Cardinal System</title>
 <link rel="icon" href="Resources/CodeWave.png">
+  <meta charset="UTF-8">
+  <meta name="description" content="Cardinal System's official website.">
+  <meta name="keywords" content="Java,Library,Discord,Bot,Cardinal,System,Tutorial,Open,Source">
+  <meta name="author" content="Cardinal System">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
 	background-image: url("Resources/Cardinal.png");
@@ -15,28 +20,29 @@ h1{
 td{
 	background-color: white;
 }
-#topnav{
-	 background-color: black;
+img {
+	cursor: pointer; 
+}
+.headerClass { 
+	display: block;
+	border-bottom: 1px solid #aaa;
 }
 .logos img {
-    width: 4%;
-    height: 20%
-}
-img { cursor: pointer; }
-headerClass { 
-    display: block;
+	width: 2%;
+	height: 10%
 }
 </style>
 </head>
 <body>
 <header class="headerClass">
-<div id="topnav" align="right">
-<br>
-<div class='logos'>
-<img src="Resources/devcof.png" alt="Developer\'s Coffee" onclick='redirect("https://www.youtube.com/channel/UCOQGDtV4N3tE6chKePF-xOw")' value="Redirect"/>
-<img src="Resources/discordlogo.png" alt="Discord" onclick='redirect("https://discord.gg/7Jh6Jd6/")' value="Redirect"/>
-</div>
-<br>
+<div class='contain'>
+	<br style="line-height: 1.5em"/>
+	<div id='card' align='center'><img src="Resources/logo.png" alt='logo' onclick='redirect("")' value="Redirect"></div>
+	<div class='logos' align='right' id='log'>
+		<img src="Resources/so-icon.png" alt="Stackoverflow" onclick='redirect("https://stackoverflow.com/users/5645656/cardinal-system")' value="Redirect" title="Cardinal System - Stackoverflow"/>
+		<img src="Resources/devcof.png" alt="Developer's Coffee" onclick='redirect("https://www.youtube.com/channel/UCOQGDtV4N3tE6chKePF-xOw")' value="Redirect" title="Developer's Coffee - Youtube"/>
+		<img src="Resources/discordlogo.png" alt="Discord" onclick='redirect("https://discordapp.com/invite/7Jh6Jd6")' value="Redirect" title="Cardinal System - Discord"/>&nbsp;&nbsp;&nbsp;
+	</div>
 </div>
 </header>
  <br><br><br><br><br><br>
