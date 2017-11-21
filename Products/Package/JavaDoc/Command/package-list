@@ -1,0 +1,5 @@
+com.Cardinal.CommandPackage
+com.Cardinal.CommandPackage.Commands
+com.Cardinal.CommandPackage.Exceptions
+com.Cardinal.CommandPackage.Load
+com.Cardinal.CommandPackage.Proccessor

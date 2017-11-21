@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cardinal System - Command Package</title>
+<link rel="icon" href="../../Resources/Heads/CodeWave.png"/>
+  <meta charset="UTF-8"/>
+  <meta name="description" content="Cardinal System - Command Package Official Product Page."/>
+  <meta name="keywords" content="Java,Library,Cardinal,System,Tutorial,Open,Source"/>
+  <meta name="author" content="Cardinal System"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+	background-image: url("../../Resources/Backgrounds/CodeRain.png");
+	background-size: 100% 100%;
+	background-repeat: repeat-y;
+        }
+.headerClass { 
+	display: block;
+	border-bottom: 1px solid #aaa;
+}
+.logo {
+	color:white;
+	font-family: "ar destine";
+	font-weight: bold;
+	font-size:300%;
+}
+.logos img {
+	width: 2%;
+	height: 10%
+}
+td {
+	background-color: white;
+}
+</style>
+<header class="headerClass">
+<div class="contain">
+	<br style="line-height: 1.5em"/>
+	<div class="logo" align="center">- Command Package -</div>
+	<div class="logos" align="right" id="log">
+		<a href='https://stackoverflow.com/users/5645656/cardinal-system'><img src="../../Resources/Icons/Media/so-icon.png" alt="Stackoverflow" title="Cardinal System - Stackoverflow"/></a>
+		<a href='https://www.youtube.com/channel/UCOQGDtV4N3tE6chKePF-xOw'><img src="../../Resources/Icons/Media/devcof.png" alt="Developer's Coffee" title="Developer's Coffee - Youtube"/></a>
+		<a href='https://discordapp.com/invite/7Jh6Jd6'><img src="../../Resources/Icons/Media/discordlogo.png" alt="Discord" title="Cardinal System - Discord"/></a><hr>
+	</div>
+</div>
+</header>
+<body>
+<br><br><br><br><br><br>
+<center>
+<table border="1">
+	<td>	
+		<center><div><h4>Library Downloads</h4><h6>(Downloads for Libaries as well as Sources and JavaDoc)</h6></div></center><hr/>
+		<center><a href='Download/Command'><img src="../../Resources/Icons/Java/Libraries.png" alt="OCSL" title="Sources - OCSL"/></a></center>
+		<center><div><h4>JavaDoc</h4></div></center><hr/>
+		<center><a href='JavaDoc/Command'><img src="../../Resources/Icons/Java/JavaDoc.png" alt="OCSL" title="JavaDoc - OCSL"/></a></center>
+		<hr/>
+		<center><div><h4>Sources</h4></div></center><hr/>
+		<center><a href='https://github.com/TheCardinalSystem/DiscordPackages/tree/master/CommandPackage#command-package'><img src="../../Resources/Icons/Java/SourceSpacer.png" alt="OCSL" title="Sources - OCSL"/></a></center>
+		<hr>
+		<br><br><br>
+
+		<center><div><h2>Usage:</h2></div></center><hr/><br>
+		<div><center><h5>Constructing a CommandClient can be done as follows:</h5></center></div>
+		<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #888888">//import com.Cardinal.CommandPackage.CommandClient;</span>
+CommandClient client <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> CommandClient<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;BotToken&quot;</span><span style="color: #333333">);</span>
+</pre></td></tr></table></div><br><hr><br>
+		<div><center><h5>Creating a listener can be done as follows:</h5></center></div>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3
+4
+5
+6
+7
+8
+9</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.Cardinal.CommandPackage.Proccessor.EventListener</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Listener</span> <span style="color: #008800; font-weight: bold">extends</span> EventListener <span style="color: #333333">{</span>
+
+	<span style="color: #008800; font-weight: bold">public</span> <span style="color: #0066BB; font-weight: bold">Listener</span><span style="color: #333333">(</span>String prefix<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+		<span style="color: #008800; font-weight: bold">super</span><span style="color: #333333">(</span>prefix<span style="color: #333333">);</span>
+	<span style="color: #333333">}</span>
+
+<span style="color: #333333">}</span>
+</pre></td></tr></table></div><br><hr><br>
+		<div><center><h5>Registering a listener can be done as follows:</h5></center></div>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #888888">//Client is of type CommandClient, listener is of type EventListener</span>
+client<span style="color: #333333">.</span><span style="color: #0000CC">addListener</span><span style="color: #333333">(</span>listener<span style="color: #333333">);</span>
+</pre></td></tr></table></div><br><hr><br>
+		<div><center><h5>Example of creating a command is as follows:</h5></center></div>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.Cardinal.CommandPackage.Commands.ICommand</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.Cardinal.CommandPackage.Exceptions.MissingArgumentsException</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">sx.blah.discord.handle.impl.events.guild.channel.message.MessageReceivedEvent</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">CommandPing</span> <span style="color: #008800; font-weight: bold">implements</span> ICommand <span style="color: #333333">{</span>
+
+	<span style="color: #008800; font-weight: bold">public</span> <span style="color: #0066BB; font-weight: bold">CommandPing</span><span style="color: #333333">()</span> <span style="color: #333333">{</span>
+	<span style="color: #333333">}</span>
+
+	<span style="color: #555555; font-weight: bold">@Override</span>
+	<span style="color: #008800; font-weight: bold">public</span> String <span style="color: #0066BB; font-weight: bold">getName</span><span style="color: #333333">()</span> <span style="color: #333333">{</span>
+		<span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;ping&quot;</span><span style="color: #333333">;</span>
+	<span style="color: #333333">}</span>
+
+	<span style="color: #555555; font-weight: bold">@Override</span>
+	<span style="color: #008800; font-weight: bold">public</span> String <span style="color: #0066BB; font-weight: bold">getDescription</span><span style="color: #333333">()</span> <span style="color: #333333">{</span>
+		<span style="color: #008800; font-weight: bold">return</span> <span style="background-color: #fff0f0">&quot;pong!&quot;</span><span style="color: #333333">;</span>
+	<span style="color: #333333">}</span>
+
+	<span style="color: #555555; font-weight: bold">@Override</span>
+	<span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">execute</span><span style="color: #333333">(</span>MessageReceivedEvent event<span style="color: #333333">,</span> String<span style="color: #333333">[]</span> args<span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">throws</span> MissingArgumentsException <span style="color: #333333">{</span>
+
+		event<span style="color: #333333">.</span><span style="color: #0000CC">getChannel</span><span style="color: #333333">().</span><span style="color: #0000CC">sendMessage</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Pong!&quot;</span><span style="color: #333333">);</span>
+
+	<span style="color: #333333">}</span>
+
+<span style="color: #333333">}</span>
+</pre></td></tr></table></div><br><hr><br>
+		<div><center><h5>Registering a command is done as follows:</h5></center></div>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+2
+3</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #888888">//import com.Cardinal.CommandPackage.Proccessor.CommandRegistry;</span>
+<span style="color: #888888">//Command is of type ICommand</span>
+CommandRegistry<span style="color: #333333">.</span><span style="color: #0000CC">registerCommand</span><span style="color: #333333">(</span>command<span style="color: #333333">);</span>
+</pre></td></tr></table></div><br><hr><br>
+		<div><center><h3>Users may create and share commands by exporting subclasses of<br>ICommand into Jars (command bundles are supported).</h3></center></div>
+		<div><center><h4>When adding these bundles/commands, just copy the jar file to the<br>'Commands' folder that is generated and call the following method:</h4></center></div>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"></pre></td><td><pre style="margin: 0; line-height: 125%">CommandLoader#<span style="color: #0000CC">startCommandLoader</span><span style="color: #333333">();</span>
+</pre></td></tr></table></div><br><hr><br>
+		<div><center><h5>If a command package contains commands you do not wish to implement, just call the following method:</h5></center></div>
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"></pre></td><td><pre style="margin: 0; line-height: 125%">CommandRegistry#<span style="color: #0000CC">unregisterCommand</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;commandName&quot;</span><span style="color: #333333">);</span>
+</pre></td></tr></table></div>
+<br><br>
+	</td>
+</table>
+</center>
+<br><br><br>
+</body>
+</html>
