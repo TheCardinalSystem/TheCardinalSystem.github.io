@@ -1,0 +1,13 @@
+<!DOCTYPE XML>
+<properties>
+  <setting>
+    <group>A</group>
+    <name>John</name>
+    <job>Manager</job>
+  </setting>
+  <setting>
+    <group>B</group>
+    <name>Peter</name>
+    <job>Admin</job>
+  </setting>
+</properties>
